@@ -19,6 +19,7 @@ services:
   spring-petclinic:
     environment:
       POSTGRES_URL: jdbc:postgresql://postgres:5432/petclinic
+      JAVA_CDS_OPTS: ""
     image: spring-petclinic:latest
     build:
       context: .
